@@ -2,7 +2,7 @@
 # menu.py
 #
 # Handles mission selection via the SPIKE Prime hub menu.
-# Allows users to choose and execute predefined missions based on display 
+# Allows users to choose and execute predefined missions based on display
 # orientation, ensuring intuitive navigation.
 #
 # Author: Bolton Robotics
@@ -26,6 +26,7 @@ from pybricks.parameters import Side
 from pybricks.tools import hub_menu
 
 def menu(r):
+    from mission_one import mission_one
     from mission_two import mission_two
     from mission_three import mission_three
     from mission_four import mission_four
@@ -34,12 +35,12 @@ def menu(r):
     from mission_seven import mission_seven
     from mission_eight import mission_eight
     from mission_nine import mission_nine
-    # Change the ordering based on the orientation so the arrow 
+    # Change the ordering based on the orientation so the arrow
     # selections make sense.
     if r.display_orientation == Side.BOTTOM or r.display_orientation == Side.LEFT:
         selected = hub_menu("1", "9", "8", "7", "6", "5", "4", "3", "2")
     else:
-        selected = hub_menu("1", "2", "3", "4", "5", "6", "7", "8", "9") 
+        selected = hub_menu("1", "2", "3", "4", "5", "6", "7", "8", "9")
     # Based on the selection, run a program.
     if selected == "1":
         mission_one(r)

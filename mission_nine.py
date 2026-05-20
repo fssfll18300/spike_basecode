@@ -16,10 +16,10 @@
 from robot import robot
 from pybricks.tools import wait, StopWatch
 
-def mission_nine(r):
-     print("Running Mission 9")
+def mission_nine(r: robot):
+    print("Running Mission 9")
     # Your code goes here...
-r.robot.straight(750)
+    r.robot.straight(750)
 ################################
 # KEEP THIS AT THE END OF THE FILE
 # This redirects to running main.
