@@ -21,12 +21,11 @@
 #
 ################################################################################
 
-from robot import robot
+import robot
 from pybricks.parameters import Side
 from pybricks.tools import hub_menu
 
-def menu(r: robot):
-    from mission_one import mission_one
+def menu(r):
     from mission_two import mission_two
     from mission_three import mission_three
     from mission_four import mission_four
