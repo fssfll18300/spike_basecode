@@ -173,7 +173,7 @@ PORT_MAPPING: dict[str, Port] = {
     "rdm": Port.D,  # Right Drive Motor (Required)
     "lam": Port.F,  # Left Attachment Motor (Optional)
     "ram": Port.E,  # Right Attachment Motor (Optional)
-    #"lcs": Port.A,  # Left Color Sensor (Optional)
+    "eyes": Port.A,  # ultrasonic senSor (Optional)
     #"rcs": Port.B,  # Right Color Sensor (Optional)
 }
 

@@ -25,9 +25,18 @@ eyes = UltrasonicSensor(Port.A)
 def mission_one(r: robot):
     print("Running Mission 1")
     # Your code goes here...
+    #r.robot.straight()
     print("eyes",eyes.distance())
-
-
+    #if eyes.distance() < 596:
+        #r.robot.brake()
+    r.robot.straight(425)
+    r.robot.straight(-150)
+    r.robot.turn(-21)
+    r.robot.straight(-250)
+    r.robot.turn(35)
+    r.robot.straight(650)
+    r.robot.turn(-25)
+    r.robot.straight(-100)
 ################################mj
 # KEEP THIS AT THE END OF THE FILE
 # This redirects to running main.
