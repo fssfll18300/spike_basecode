@@ -29,14 +29,20 @@ def mission_one(r: robot):
     print("eyes",eyes.distance())
     #if eyes.distance() < 596:
         #r.robot.brake()
-    r.robot.straight(425)
+    r.robot.straight(475)
     r.robot.straight(-150)
     r.robot.turn(-21)
     r.robot.straight(-250)
-    r.robot.turn(35)
+    r.robot.turn(13)
     r.robot.straight(650)
+    r.robot.turn(75)
+    r.robot.straight(100)
+    r.ram.run_time(-400,750)
     r.robot.turn(-25)
     r.robot.straight(-100)
+    r.robot.straight(-300)
+    r.robot.turn(-35)
+    r.robot.straight(-750)
 ################################mj
 # KEEP THIS AT THE END OF THE FILE
 # This redirects to running main.

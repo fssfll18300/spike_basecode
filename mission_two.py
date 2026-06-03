@@ -20,13 +20,7 @@ def mission_two(r: robot):
     print("Running Mission 2")
     # Your code goes here...
     # Sample code: Test Driving in a box
-    count = 0
-    while (count < 8):
-        r.robot.straight(500)
-        r.robot.turn(90)
-        wait(100)
-        count += 1
-
+    r.ram.run_time(-400,500)
 ################################
 # KEEP THIS AT THE END OF THE FILE
 # This redirects to running main.
