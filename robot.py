@@ -155,12 +155,12 @@ else:
 #   r.robot.straight()
 #   r.robot.arc()
 #   r.robot.drive()
-TIRE_DIAMETER: int = 57  # mm
+TIRE_DIAMETER: int = 75  # mm
 AXLE_TRACK: int = 86  # distance between the wheels, mm
-STRAIGHT_SPEED: int = 700  # mm/sec
-STRAIGHT_ACCEL: int = 700  # mm/sec^2
-TURN_RATE: int = 500  # deg/sec
-TURN_ACCEL: int = 300  # deg/sec^2
+STRAIGHT_SPEED: int = 1000  # mm/sec
+STRAIGHT_ACCEL: int = 1000  # mm/sec^2
+TURN_RATE: int = 1000  # deg/sec
+TURN_ACCEL: int = 1000  # deg/sec^2
 
 #############################################
 # Define Robot Port Mappings
