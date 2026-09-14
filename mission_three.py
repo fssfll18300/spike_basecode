@@ -23,6 +23,8 @@ def mission_three(r: robot):
     # Sample Code: Test running the attachment motor until stalled
     r.ram.run_until_stalled(1000, duty_limit=30)
 
+
+
 ################################
 # KEEP THIS AT THE END OF THE FILE
 # This redirects to running main.
