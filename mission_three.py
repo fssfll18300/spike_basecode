@@ -26,10 +26,11 @@ def mission_three(r: robot):
     r.robot.straight(500)
     r.robot.turn(130)
     r.robot.settings(100,100,100,100)
-    r.robot.straight(200)
+    r.robot.straight(150)
+    r.robot.straight(-100)
+    r.robot.turn(60)
     r.robot.settings(500,500,500,500)
-    r.ram.run_time(-600,600)
-    r.robot.curve(50,-180)
+    r.robot.straight(600)
 
 
 ################################

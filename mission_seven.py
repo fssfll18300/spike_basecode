@@ -20,6 +20,7 @@ def mission_seven(r: robot):
     print("Running Mission 7")
     # Your code goes here...
     r.robot.straight(750)
+    r.robot.straight(-800)
 ################################
 # KEEP THIS AT THE END OF THE FILE
 # This redirects to running main.
