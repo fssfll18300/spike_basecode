@@ -19,11 +19,14 @@ from pybricks.tools import wait, StopWatch
 def mission_two(r: robot):
     print("Running Mission 2")
     # Your code goes here...
-    # Sample code: Test Driving in a box
-    r.robot.straight(500)
-    r.lam.run_time(1000,500)
-    r.robot.straight(-500)
-
+    r.ram.run_angle(500,30)
+    r.robot.straight(550)
+    #starting turbo mode
+    r.robot.settings(800,1000,500,400)
+    r.robot.straight(-550)
+    r.robot.stop()
+    #ending turbo mode
+    r.robot.settings(500,500,400,400)
 
 
 

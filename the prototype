@@ -1,0 +1,14 @@
+from spike import PrimeHub, DistanceSensor
+from spike.control import wait_for_seconds
+
+hub = PrimeHub()
+# Initialize the distance sensor on Port A
+ultrasonic = DistanceSensor('A')
+
+# Option A: Simple wait until an object is within 12 inches (1 foot)
+hub.light_matrix.write("Ready")
+ultrasonic.wait_for_distance_closer_than(12, unit='in')
+
+# Action to perform when object is detected closer than 1 foot
+hub.speaker.beep(60, 0.5)
+hub.light_matrix.show_image("HAPPY")

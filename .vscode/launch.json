@@ -2,7 +2,35 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "BR-31",
+      "name": "18300-RuneStone",
+      "type": "debugpy",
+      "noDebug": true,
+      "request": "launch",
+      "module": "pybricksdev",
+      "args": [
+        "run",
+        "ble",
+        "--name",
+        "18300-RuneStone",
+        "main.py"
+      ]
+    },
+    {
+      "name": "18300-MURC",
+      "type": "debugpy",
+      "noDebug": true,
+      "request": "launch",
+      "module": "pybricksdev",
+      "args": [
+        "run",
+        "ble",
+        "--name",
+        "18300-MURC",
+        "main.py"
+      ]
+    },
+    {
+      "name": "Run on BR-31",
       "type": "debugpy",
       "noDebug": true,
       "request": "launch",
@@ -16,7 +44,7 @@
       ]
     },
     {
-      "name": "Run on BR-02",
+      "name": "Run on BR-7",
       "type": "debugpy",
       "noDebug": true,
       "request": "launch",
@@ -25,21 +53,7 @@
         "run",
         "ble",
         "--name",
-        "BR-02",
-        "main.py"
-      ]
-    },
-    {
-      "name": "Run on BR-03",
-      "type": "debugpy",
-      "noDebug": true,
-      "request": "launch",
-      "module": "pybricksdev",
-      "args": [
-        "run",
-        "ble",
-        "--name",
-        "BR-03",
+        "BR-7",
         "main.py"
       ]
     }

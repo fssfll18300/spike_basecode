@@ -21,8 +21,15 @@ def mission_three(r: robot):
     print("Running Mission 3")
     # Your code goes here...
     # Sample Code: Test running the attachment motor until stalled
-    r.ram.run_until_stalled(1000, duty_limit=30)
-
+    r.robot.arc(700,60)
+    r.robot.turn(-90)
+    r.robot.straight(500)
+    r.robot.turn(130)
+    r.robot.settings(100,100,100,100)
+    r.robot.straight(200)
+    r.robot.settings(500,500,500,500)
+    r.ram.run_time(-600,600)
+    r.robot.curve(50,-180)
 
 
 ################################

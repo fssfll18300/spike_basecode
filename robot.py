@@ -157,23 +157,23 @@ else:
 #   r.robot.drive()
 TIRE_DIAMETER: int = 75  # mm
 AXLE_TRACK: int = 86  # distance between the wheels, mm
-STRAIGHT_SPEED: int = 1000  # mm/sec
-STRAIGHT_ACCEL: int = 1000  # mm/sec^2
-TURN_RATE: int = 1000  # deg/sec
-TURN_ACCEL: int = 1000  # deg/sec^2
+STRAIGHT_SPEED: int = 500  # mm/sec
+STRAIGHT_ACCEL: int = 500  # mm/sec^2
+TURN_RATE: int = 400  # deg/sec
+TURN_ACCEL: int = 400  # deg/sec^2
 
 #############################################
 # Define Robot Port Mappings
 #############################################
 # This needs to be setup according to how you
 # wired your robot.  If you don't have color sensor(s) or
-# attachment motor(s) you can comment them out.
+# attachment motogjnr(s) you can comment them out.
 PORT_MAPPING: dict[str, Port] = {
     "ldm": Port.C,  # Left Drive Motor (Required)
     "rdm": Port.D,  # Right Drive Motor (Required)
-    "lam": Port.F,  # Left Attachment Motor (Optional)
-    "ram": Port.E,  # Right Attachment Motor (Optional)
-    "eyes": Port.A,  # ultrasonic senSor (Optional)
+    "lam": Port.E,  # Left Attachment Motor (Optional)
+    "ram": Port.F,  # Right Attachment Motor (Optional)
+    #"eyes": Port.A,  # ultrasonic senSor (Optional)
     #"rcs": Port.B,  # Right Color Sensor (Optional)
 }
 

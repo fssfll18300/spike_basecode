@@ -25,7 +25,7 @@ from pybricks.tools import wait
 def mission_one(r: robot):
     print("Running Mission 1")
     # Your code goes here...
-    #r.robot.straight()
+    #r.robot.straight(1000)
     #print("eyes",eyes.distance())
     #if eyes.distance() < 596:
         #r.robot.brake()
