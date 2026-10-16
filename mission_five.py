@@ -16,10 +16,19 @@
 from robot import robot
 from pybricks.tools import wait, StopWatch
 
-def mission_five(r: robot) :
+def mission_five(r: robot):
     print("Running Mission 5")
     # Your code goes here...
-
+    r.robot.straight(200)
+    r.robot.turn(50)
+    r.robot.straight(161)
+    r.lam.run_until_stalled(-9999, duty_limit=9999)
+    r.robot.straight(-9999)
+    #r.robot.straight(200)
+    #r.robot.turn(90)
+    #r.robot.straight(200)
+    #r.robot.turn(-90)
+    #r.ram.run_time(1000,1000)
 ################################
 # KEEP THIS AT THE END OF THE FILE
 # This redirects to running main.
