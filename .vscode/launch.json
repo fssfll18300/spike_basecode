@@ -4,7 +4,6 @@
     {
       "name": "18300-RuneStone",
       "type": "debugpy",
-      "noDebug": true,
       "request": "launch",
       "module": "pybricksdev",
       "args": [
@@ -13,12 +12,12 @@
         "--name",
         "18300-RuneStone",
         "main.py"
-      ]
+      ],
+      "noDebug": true
     },
     {
       "name": "18300-MURC",
       "type": "debugpy",
-      "noDebug": true,
       "request": "launch",
       "module": "pybricksdev",
       "args": [
@@ -32,7 +31,6 @@
     {
       "name": "Run on BR-31",
       "type": "debugpy",
-      "noDebug": true,
       "request": "launch",
       "module": "pybricksdev",
       "args": [
@@ -46,7 +44,6 @@
     {
       "name": "Run on BR-7",
       "type": "debugpy",
-      "noDebug": true,
       "request": "launch",
       "module": "pybricksdev",
       "args": [

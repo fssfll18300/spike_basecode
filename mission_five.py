@@ -21,7 +21,7 @@ def mission_five(r: robot):
     # Your code goes here...
     r.robot.straight(200)
     r.robot.turn(50)
-    r.robot.straight(260)
+    r.robot.straight(255)
     r.lam.run_until_stalled(-9999, duty_limit=9999)
     r.robot.straight(-9999)
     #r.robot.straight(200)

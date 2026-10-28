@@ -19,6 +19,13 @@ from pybricks.tools import wait, StopWatch
 def mission_four(r: robot):
     print("Running Mission 4")
     # Your code goes here...
+    r.robot.straight(400)
+    r.ram.run_time(-5000,2000)
+    r.robot.straight(-300)
+    r.ram.run_time(2000,3300)
+    r.robot.straight(300)
+    r.ram.run_time(-5000,1000)
+    r.robot.straight(-9999)
     # Sample code: Test the speaker
     notes = [
     "E4/4_", "G4/4", "E4/4", "E4/4", "A4/4", "E4/4", "D4/4",
