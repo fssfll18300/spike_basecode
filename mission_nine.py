@@ -19,7 +19,9 @@ from pybricks.tools import wait, StopWatch
 def mission_nine(r: robot):
     print("Running Mission 9")
     # Your code goes here...
-    r.robot.straight(2500)
+    #r.robot.straight(2500)
+    r.robot.straight(400)
+    r.ram.run_time(1000,1000)
 
 ################################
 # KEEP THIS AT THE END OF THE FILE
