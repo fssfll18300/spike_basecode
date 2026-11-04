@@ -20,7 +20,6 @@ def mission_six(r: robot):
     print("Running Mission 6")
     # Your code goes here...
     r.robot.straight(1000)
-                                                                            r.aightrrobot.st
  #KEEP THIS AT THE END OF THE FILE
 # This redirects to running main.
 if __name__ == "__main__":

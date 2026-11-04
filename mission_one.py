@@ -21,10 +21,10 @@ def mission_one(r: robot):
     # Your code goes here...
 
     r.robot.straight(800)
-    r.robot.curve(320,40)
+    r.robot.arc(320,40)
     r.robot.straight(75)
     r.robot.straight(-75)
-    r.robot.curve(-320,40)
+    r.robot.arc(320,-40)
     r.robot.straight(-800)
 
 ################################m
