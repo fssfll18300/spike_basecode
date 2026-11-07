@@ -16,6 +16,20 @@
       "noDebug": true
     },
     {
+      "name": "Run on BR-7",
+      "type": "debugpy",
+      "noDebug": true,
+      "request": "launch",
+      "module": "pybricksdev",
+      "args": [
+        "run",
+        "ble",
+        "--name",
+        "BR-7",
+        "main.py"
+      ]
+    },
+    {
       "name": "18300-MURC",
       "type": "debugpy",
       "request": "launch",
@@ -41,18 +55,5 @@
         "main.py"
       ]
     },
-    {
-      "name": "Run on BR-7",
-      "type": "debugpy",
-      "request": "launch",
-      "module": "pybricksdev",
-      "args": [
-        "run",
-        "ble",
-        "--name",
-        "BR-7",
-        "main.py"
-      ]
-    }
   ]
 }

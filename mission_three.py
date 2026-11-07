@@ -21,12 +21,14 @@ def mission_three(r: robot):
     print("Running Mission 3")
     # Your code goes here...
     # Sample Code: Test running the attachment motor until stalled
+    r.robot.straight(80)
+    r.robot.turn(-40)
     r.robot.arc(700,60)
     r.robot.turn(-90)
     r.robot.straight(500)
-    r.robot.turn(130)
+    r.robot.turn(127)
     r.robot.settings(100,100,100,100)
-    r.robot.straight(150)
+    r.robot.straight(175)
     r.robot.settings(500,500,500,500)
     r.robot.straight(-150)
     r.ram.run_angle(600,500)
@@ -36,7 +38,7 @@ def mission_three(r: robot):
     r.robot.straight(100)
     r.ram.run_angle(-1000,500)
     r.robot.straight(-100)
-    r.robot.turn(-90)
+    r.robot.turn(-75)
     r.robot.straight(-1000)
 
 
