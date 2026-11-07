@@ -22,10 +22,9 @@ def mission_four(r: robot):
     r.robot.straight(400)
     r.ram.run_time(-5000,2000)
     r.robot.straight(-300)
-    r.ram.run_time(2000,3300)
+    r.ram.run_time(2000,1000)
     r.robot.straight(300)
-    #r.ram.run_time(5000,-1000)
-    r.ram.run_time(-5000,3000)
+    r.ram.run_time(-5000,1000)
     r.robot.straight(-9999)
     # Sample code: Test the speaker
 
